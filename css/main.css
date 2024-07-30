@@ -1,0 +1,447 @@
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+.nav{
+  position: relative;
+}
+.nav-bar {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 15% 20% 63%;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  
+}
+
+
+.nav-bar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.logo1 {
+  float: right;
+  margin-right: 15px;
+}
+.logo1-div {
+  border-right: 2px solid black;
+  height: 13%;
+  margin-right: 15px;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  border: 1px solid black;
+}
+
+.nav-bar li {
+  border-left: 1px solid black;
+}
+.nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: italic;
+}
+.nav-bar li a:hover {
+  background-color: #3c918f;
+}
+
+.main-nav {
+  height: 300px;
+}
+
+.top-nav {
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.bot-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Dropdown Button */
+.dropbtn {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1d4ed8;
+  transition: all 0.3s ease;
+}
+.dropdown a:hover::after {
+  width: 100%;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  opacity: 0.5;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.fixed-nav {
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1013;
+  opacity: 1;
+  background: transparent;
+}
+.move{
+  background-color: #118f74;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.mySlides img {
+  height: 100vh;
+}
+
+.nav {
+  height: 100vh;
+}
+.card {
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(247, 246, 246);
+  margin-left: 40px;
+}
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.card h3 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card p {
+  margin-bottom: 10px;
+  color: rgb(96, 81, 81);
+}
+.card-button {
+  padding: 8px;
+  width: 140px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+.details-btn {
+  border: 1px solid black;
+  background-color: #118f74;
+  color: white;
+}
+.donate-btn {
+  border: 1px solid black;
+  background-color: #ccc;
+  color: black;
+}
+
+.card:hover {
+  background-color: rgb(229, 224, 224);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  color: #3c918f;
+}
+.card-button:hover {
+  background-color: rgb(19, 143, 185);
+  color: white;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.projects {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.zekat-img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-image: url("https://hiranur.org.tr/rsm/icerik/buyuk/sadaka-nedir-sadaka-farz-midir_405.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  justify-content: center;
+  background-position: center;
+}
+.zekat-contents p{
+  color: #000;
+}
+.zekat-contents {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: center;
+}
+.help-faliyet h2 {
+  text-align: center;
+  margin: 5%;
+}
+
+.help-faliyet-contents{
+
+  display: flex;
+}
+
+.bottom p {
+  color: #3d85c6;
+}
+.bottom .skill {
+  width: 100%;
+  height: 1px;
+  background-color: #556eb2;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skill .skill-bar {
+  width: 74%;
+  height: 5px;
+  background-color: #1d4ed8;
+}
+.skill-bar span {
+  position: absolute;
+  right: 15%;
+  top: 0;
+}
+
+.dotted-card {
+  display: grid;
+  width: 50%;
+  margin: 0px 30px 30px 30px;
+
+}
+
+.dotted-card .card2 {
+  margin-bottom: 30px;
+  padding: 70px;
+  cursor: auto;
+  border: 2px dotted #1d4ed8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.fa-handshake-angle {
+  color: #1d4ed8;
+  font-size: 50px;
+  margin: 30px;
+  border: 1px solid #1d4ed8;
+  border-radius: 50%;
+}
+.dotted-card h4 {
+  color: #1d4ed8;
+  margin-bottom: 30px;
+}
+
+.dotted-card .dotted-button {
+  border-top: 2px dotted #1d4ed8;
+  padding-top: 15px;
+}
+.dotted2-card .dotted-button {
+  border-top: 2px dotted #e2942d;
+  padding-top: 15px;
+}
+.fa-graduation-cap {
+  color: #e2942d;
+  font-size: 50px;
+  margin: 30px;
+  border: 1px solid #e2942d;
+  border-radius: 50%;
+}
+.dotted2-card h4 {
+  color: #e2942d;
+  margin-bottom: 30px;
+}
+
+.dotted2-card .bottom .skill {
+  width: 100%;
+  height: 1px;
+  background-color: #e6aa75;
+  position: relative;
+  margin-bottom: 30px;
+}
+.dotted2-card .skill .skill-bar {
+  width: 74%;
+  height: 5px;
+  background-color: #e2942d;
+}
+
+.dotted2-card .bottom p {
+  color: #e2942d;
+}
+
+.dotted2-card .card2 {
+  border: 2px dotted #e2942d;
+}
+.basarilar{
+  background-color: #ccc;
+  height: 100vh;
+
+}
+.basarilar h3{
+  text-align: center;
+  padding-top: 50px;
+  color: #2f2c51;
+  font-weight: 900;
+  font-size: 35px;
+}
+h2{
+  text-align: center;
+  padding-top: 50px;
+  color: #2f2c51;
+  font-weight: 900;
+  font-size: 35px;
+}
+p{
+  font-weight: 500;
+}
+  .contents-con{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+.timeline-item{
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px;
+  border: 0.3px double #118f74;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.timeline-item img{
+  width: 215px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.timeline-item a{
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #3d85c6;
+}
+.timeline-item .read-more{
+  color: #3c918f;
+}
+.all-foot{
+  background-color: #556eb2;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+
+}
+.footer-contents{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.copyright{
+  margin-bottom: 0px;
+  color: #e2942d;
+
+}
+.copy{
+  font-size: 13px;
+}
+.left-foot img{
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.mid-foot a{
+  color: #ddd;
+}
+.mid-foot li{
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.all-foot h4{
+  margin-bottom: 20px;
+  color: #e2942d;
+  font-weight: 600;
+  font-size: 30px;
+  
+
+}
+.footer-contents{
+color: #ddd;
+
+}
+
+
+
+
+
+
+
+
+
+
